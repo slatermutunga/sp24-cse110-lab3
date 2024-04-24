@@ -1,6 +1,6 @@
 ---
-name: 'Issue: Add CSS'
-about: Add Stand-Up
+name: 'Add CSS'
+about: 
 title: ''
 labels: ''
 assignees: ''
