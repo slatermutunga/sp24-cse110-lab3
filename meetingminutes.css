@@ -74,7 +74,7 @@ p{
 }
 
 .box{
-    background-color: color(display-p3, 0.92 0.83 0.65);
+    background-color: beige;
     border-style: solid;
     border-color: black;
     border-width: 2mm;
@@ -82,7 +82,7 @@ p{
 }
 
 .box2{
-    background-color: color-mix(in srgb, #f5f5dc, #ddcdac);
+    background-color: beige;
     border: solid 2px black;
     border-radius: 10px;
 }
