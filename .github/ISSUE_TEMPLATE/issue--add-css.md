@@ -1,6 +1,6 @@
 ---
 name: 'Add CSS'
-about: ''
+about: 'CSS'
 title: ''
 labels: ''
 assignees: ''
