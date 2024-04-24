@@ -6,15 +6,72 @@
     <title>Meeting Minutes</title>
 
     <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        .flex-container {
+            display: flex; 
+            justify-content: space-around; 
+            align-items: center; 
+            flex-wrap: wrap; 
+        }
+
+        .flex-item {
+            width: 200px;
+            height: 100px;
+            background-color: white;
+            margin: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 10px; 
+            justify-content: center;
+        }
+
+        .grid-item {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+        }
+
+        @media screen and (max-width: 600px) {
+        .flex-container {
+            display: flex; 
+            justify-content: space-around; 
+            align-items: center; 
+            flex-wrap: wrap; 
+        }
+
+        .flex-item {
+            width: 150px;
+            height: 50px;
+            background-color: white;
+            margin: 5px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 5px; 
+            justify-content: center;
+        }
+
+        .grid-item {
+            width: 75px;
+            height: 50px;
+            background-color: white;
+        }
+        }
+    </style>
   </head>
   <body>
-
+    <div class = "box marginLong paddingLong flex-container">
     <header>
-        <h1><strong>Pomodoro Timer Brainstorm</strong></h1>
-        <h2><b>Goal: Brainstorm App Ideas and Delegate Roles</b></h2>
-        <h3><em>Date: 4-15-2024</em></h3>
+        <h1 class = "element flex-itrem"><strong>Pomodoro Timer Brainstorm</strong></h1>
+        <h2 class = "flex-itrem"><b>Goal: Brainstorm App Ideas and Delegate Roles</b></h2>
+        <h3 class = "flex-itrem"><em>Date: 4-15-2024</em></h3>
     </header>
-
+</div>
     <nav>
         <ul>
             <li><a href = "#attendance">Attendance</a></li>
@@ -26,8 +83,9 @@
 <main>
 <div>
     <hr>
+    <div class = "box2 marginShort paddingShort grid-container">
     <section id ="attendance">
-    <h3><i>Members Present</i></h3>
+    <h3 class = "grid-item"><i>Members Present</i></h3>
         <ul>
             <li>Slater</li>
             <li>Jayden</li>
@@ -36,7 +94,7 @@
     </section>
 
     <section id ="agenda">
-    <h3><i>To-Do</i></h3>
+    <h3 class = "grid-item"><i>To-Do</i></h3>
         <ol>
             <li>Everyone Brainstorms Ideas</li>
             <li>Vote On Best Ones</li>
@@ -44,10 +102,15 @@
         </ol>
     </section>   
 
-    <h3><b>Unfinished Business From Last Meeting</b></h3>
-        <p>Finish Introductions. <br>Make Sure We Know Eachother's Names.<br></p>
-
-    <h2><a href="https://pomofocus.io/">Link To Popular Pomodoro Website</a></h2>
+    <section id = "tofinish"></section>
+    <h3 class = "grid-item"><b>Unfinished Business From Last Meeting</b></h3>
+    <ul>
+        <li>Finish Introductions</li>
+        <li>Make Sure We Know Eachother's Names</li>
+    </ul>
+    </section>
+    </div>
+    <h2><a href="https://pomofocus.io/" id = "link">Link To Popular Pomodoro Website</a></h2>
 
     <details>
         <summary><h3><em>How Pomofocus Works</em></h3></summary>
