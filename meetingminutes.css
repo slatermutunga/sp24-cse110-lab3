@@ -1,18 +1,108 @@
-h1{
-    color: red
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+
+:root{
+    --maincolor: brown;
+}
+
+.element{
+    color: var(--maincolor, black);
+}
+
+h1{
+    font-family: "Open Sans", sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1.2em;
+    color: red;
+    display: block;
+    position: static;
 }
 
 h2{
-    color: rgb(0, 100, 0)
+    display: inline-block;
+    font-size: 1.5rem;
+    color: rgb(0, 100, 0);
+    height: 100px;
+    width: 200px;
+    max-width: 400px;
+    min-width: 100px;
+    position: relative;
 }
 
 h3{
-    color: #FFFF00
+    font-size: 90%;
+    color: grey;
+}
+
+* {
+    font-family: Open Sans, sans-serif;
 }
 
 p{
     color: hsl(180, 8%, 69%);
     border: 2px black;
-    padding: .5em
+    padding: .5em;
+}
+
+/*Margins, Padding, and Box */
+
+#link{
+    font-style: italic;
+}
+.marginLong{
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+.marginShort{
+    margin: 10px 20px 15px 25px;
+}
+
+
+.paddingLong{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
+
+.paddingShort{
+    padding: 8pt 18pt 13pt 22pt;
+}
+
+.box{
+    background-color: color(display-p3 0.92 0.83 0.65);
+    border-style: solid;
+    border-color: black;
+    border-width: 2mm;
+    border-radius: 10px;
+}
+
+.box2{
+    background-color: color-mix(in srgb, #f5f5dc, #ddcdac);
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: red;
+}
+
+.button:active{
+    transform: translateY(2px);
+}
+
+[type="button"]{
+    background-color: white;
+}
+
+href:hover{
+    color: red;
+}
+
+h1, h2{
+    font-weight: bold;
 }
