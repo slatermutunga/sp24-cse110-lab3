@@ -2,7 +2,7 @@
 name: 'Add CSS'
 about: 'CSS'
 title: ''
-labels: ''
+labels: 'enhancement'
 assignees: ''
 
 ---
